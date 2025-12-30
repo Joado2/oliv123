@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy 1st Anniversary 💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+    body.unlocked {
+    background: url("2.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+    .anniversary-title {
+        font-family: 'Great Vibes', cursive;
+        font-size: 3.5em;
+        letter-spacing: 2px;
+    }
+
+    /*  600% */
+    .slider {
+        display: flex;
+        width: 600%;
+        transition: transform 0.6s ease;
+    }
+
+    .slide {
+        width: 100vw;
+        height: 100vh;
+        padding: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bubble {
+        background: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(8px);
+        padding: 25px 30px;
+        border-radius: 30px;
+        max-width: 720px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2.7em;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.25em;
+        line-height: 1.8;
+        margin: 10px 0;
+    }
+
+    img {
+        max-width: 350px;
+        border-radius: 25px;
+        margin-top: 20px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    }
+
+    .controls {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+
+    button {
+        background: #fff;
+        color: #ff6f91;
+        border: none;
+        padding: 12px 20px;
+        margin: 0 10px;
+        border-radius: 30px;
+        font-size: 1em;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #ffe4ec;
+    }
+
+    .heart {
+        font-size: 3em;
+        animation: beat 1.5s infinite;
+        margin-top: 15px;
+    }
+
+    @keyframes beat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+
+    .falling {
+        position: fixed;
+        top: -10vh;
+        pointer-events: none;
+        z-index: 1;
+        animation: fall linear forwards;
+    }
+
+    .heart {
+        color: #ff6f91;
+        text-shadow: 0 0 8px rgba(255, 111, 145, 0.8);
+    }
+
+    .sparkle {
+        color: #fff;
+        text-shadow: 0 0 12px rgba(255,255,255,0.9);
+    }
+
+    @keyframes fall {
+        to {
+            transform: translateY(110vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+    #lockedMessage {
+        display: none;
+        height: 100vh;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+    }
+
+    #countdown {
+        margin-top: 20px;
+        font-size: 1.6em;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="lockedMessage">
+    <h1 class="anniversary-title">⏳ Tunggu sebentar ⏳</h1>
+    <p style="font-size:1.4em;">
+        Kebuka dalam waktu : <br>
+        <strong id="targetDateText"></strong>
+    </p>
+    <div id="countdown">Loading countdown…</div>
+    <p style="font-size:1.2em; margin-top:20px;">
+        Sabar ya… 😌
+    </p>
+</div>
+
+<div id="mainContent" style="display:none;">
+
+<div class="slider" id="slider">
+
+    <!-- Slide 1 -->
+    <div class="slide">
+        <div class="bubble">
+            <h1 class="anniversary-title">Happy 1st Anniversary ❤️</h1>
+            <h2>HAII baby… guess what?</h2>
+            <p>I love you soooo much.<br>you are my love of my life sayangg yay! 😌💕</p>
+        </div>
+        <div class="heart">❤️</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <div class="bubble">
+            <h1>HAPPY 1ST ANNIVERSARY SAYANGKU CINTAKU OLIV💕</h1>
+            <p>Nggak kerasa ya, we've already made it to one whole year together. A year full of stories, laugh, small dramas, and simple moments that turned out to be really valuable. Thank you for staying with me, for being patient with me, even when I'm not at my best.</p>
+            <p>There were moments when we didn’t have a label and people would’ve called it a situationship, but my heart already knew. Even in that uncertainty, it kept choosing you. And now I know for sure whatever the label is, it has always been you.</p>
+            <p>I’m not gonna leave you. I choose you today, tomorrow, ever and forever i hope u don't leave me too haha.</p>
+        </div>
+    </div>
+
+    <!-- ⭐✨ Slide 3-->
+    <div class="slide">
+        <div class="bubble">
+            <p>And Oliv… I’m also really sorry if I was ever a bad boyfriend. if I made you overthink, feel insecure, or feel like you weren’t enough. That was never what I wanted. I’m still learning, still growing, but I promise I always care about you, deeply.</p>
+            <p>I’m sorry for the times I didn’t listen properly, for the moments I replied late, or when I didn’t show my feelings the way you deserved. I know I can be stubborn, careless, and hard to understand sometimes and often create misunderstandings. But please know that I never meant to hurt you, and I hate knowing I ever made you sad.</p>
+            <p>I'm so sorry and thank you for still staying, for still choosing me despite my flaws. I want to be better for you , grow and learn more gentle, more patient and truly there for you. I promise I’ll keep trying, every single day, because you’re worth it. 🤍</p>
+        </div>
+        <div class="heart">🥰</div>
+    </div>
+
+    <!-- Slide 4  -->
+    <div class="slide">
+        <div class="bubble">
+            <h1>About You 😘</h1>
+            <p>You probably don’t even realize what you do to me. Your smile, your eyes, the way you say my name all of it drives me crazy in the best way. You’re beautiful in a way that makes me stare and forget everything else for a moment.<br>You are my everything, Oliv. You’re like an angel to me.</p>
+            <p>You mess with my heart in all the right ways. I keep finding myself thinking about you again and again. You can make me jealous, nervous, and insanely happy at the same time. You’re my soft spot and my favorite person, and I wouldn’t change that for anything.<br>And don’t worry baby, I care about you just as much👀💕</p>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <div class="bubble">
+            <h1>THIS IS US 💑</h1>
+            <p>In this photo, it’s just the two of us smiling, close, and genuinely happy. It’s a simple moment, but it means a lot to me, because it reminds me how lucky I am to stand beside you.<br>Isn't this cute? hehe 😋 </p>
+        </div>
+       <div style="display:flex; gap:20px; justify-content:center; align-items:center; flex-wrap:wrap;">
+     <img src="US.jpg" alt="Our Photo Together" style="width:300px;">
+    <img src="bg.jpg" alt="Our Photo Together" style="width:250px;">
+    </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <div class="bubble">
+            <h1>From My Heart 🤍</h1>
+            <p>Aku harap kita masih bersama-sama selamanya ya sayang 🥺<br> maaf ya kalau aku banyak salah aku bakal memperbaikinya menjadi lebih baik dari sebelumnya dan aku bakal lebih ngertiin kamu lagi <br>Aku akan melakukan apa pun untuk baby ku tercinta.</p>
+            <p>Oh… ya and also I have a BIG surprise for you<br>It holds a really special meaning for me like ALOT and maybe for you too 😉<br> I'm so excited to give it to you! I hope you feel the same way 😊 </p>
+            <p>I've got a ton of plans lined up, like hitting up a date when you're back in Indo. Hope we can have some real fun together oliv! Even if we can't do 'em all, at least 1 or 2 dari semua plan would be lit af.<p>
+        </div>
+        <div class="heart">💖</div>
+    </div>
+
+</div>
+
+<div class="controls">
+    <button onclick="prevSlide()">⬅ Back</button>
+    <button onclick="nextSlide()">Next ➡</button>
+</div>
+
+</div>
+
+<script>
+
+    
+let index = 0;
+const slider = document.getElementById("slider");
+
+function updateSlide() {
+    slider.style.transform = `translateX(-${index * 100}vw)`;
+}
+
+/* 👇 udah diubah ke 5 karena sekarang total 6 slide (index 0–5) */
+function nextSlide() {
+    if (index < 5) index++;
+    updateSlide();
+}
+
+function prevSlide() {
+    if (index > 0) index--;
+    updateSlide();
+}
+
+const countdownEl = document.getElementById("countdown");
+const targetDateText = document.getElementById("targetDateText");
+
+const openDate = new Date("2025-01-01T00:34:00").getTime();
+targetDateText.innerText = new Date(openDate).toLocaleString();
+
+function unlockContent() {
+    document.getElementById("lockedMessage").style.display = "none";
+    document.getElementById("mainContent").style.display = "block";
+    document.body.classList.add("unlocked");   // <<
+    localStorage.setItem("anniversaryUnlocked", "true");
+    setInterval(createMagicRain, 250);
+}
+
+function checkUnlock() {
+    return localStorage.getItem("anniversaryUnlocked") === "false";
+}
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = openDate - now;
+
+    if (distance <= 0) {
+        unlockContent();
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+function createMagicRain() {
+    const el = document.createElement("div");
+    el.classList.add("falling");
+
+    const isHeart = Math.random() > 0.4;
+    el.innerText = isHeart ? "❤️" : "✨";
+    el.classList.add(isHeart ? "heart" : "sparkle");
+
+    el.style.left = Math.random() * 100 + "vw";
+    el.style.fontSize = (14 + Math.random() * 26) + "px";
+    el.style.animationDuration = (3 + Math.random() * 4) + "s";
+
+    document.body.appendChild(el);
+
+    setTimeout(() => {
+        el.remove();
+    }, 7000);
+}
+
+if (checkUnlock() || new Date().getTime() >= openDate) {
+    unlockContent();
+} else {
+    document.getElementById("lockedMessage").style.display = "flex";
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+}
+</script>
+
+</body>
+</html>
